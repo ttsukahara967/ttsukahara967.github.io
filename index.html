@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ttsukahara967 | Projects</title>
+  <meta name="description" content="Personal projects by ttsukahara967: a RAG chatbot, an MNIST digit recognizer, a Unity game with its score API, a mobile ordering demo, and an MCP server.">
+  <meta property="og:title" content="ttsukahara967 | Projects">
+  <meta property="og:description" content="A showcase of personal projects">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">Portfolio</p>
+      <h1>ttsukahara967</h1>
+      <p class="lead">
+        A collection of my personal projects, from frontend and backend to machine learning, games, and MCP.
+        I like building things that actually run.
+      </p>
+      <p class="header-links">
+        <a class="button" href="https://github.com/ttsukahara967">GitHub profile</a>
+        <a class="button ghost" href="#projects">Jump to projects</a>
+      </p>
+    </div>
+  </header>
+
+  <main id="projects" class="wrap">
+    <h2 class="section-title">Projects <span>6</span></h2>
+
+    <!-- 1. chatbot_test -->
+    <article class="project" id="chatbot_test">
+      <div class="project-body">
+        <h3>AI Chatbot Sample</h3>
+        <p class="desc">
+          An AI chatbot with RAG (Retrieval Augmented Generation). It embeds the question, finds similar documents in pgvector,
+          and streams an answer token by token from a PyTorch model that uses those documents as context.
+          The whole stack runs with Docker Compose.
+        </p>
+        <ul class="tags">
+          <li>Next.js</li><li>Vercel AI SDK</li><li>FastAPI</li><li>PyTorch</li><li>PostgreSQL + pgvector</li><li>Docker Compose</li>
+        </ul>
+        <p class="links"><a href="https://github.com/ttsukahara967/chatbot_test">View on GitHub →</a></p>
+      </div>
+      <div class="project-media">
+        <a href="images/chatbot.svg"><img src="images/chatbot.svg" alt="Screenshot of the AI Chatbot Sample" loading="lazy"></a>
+      </div>
+    </article>
+
+    <!-- 2. mnist-digit-recognizer -->
+    <article class="project" id="mnist-digit-recognizer">
+      <div class="project-body">
+        <h3>MNIST Digit Recognizer</h3>
+        <p class="desc">
+          Draw a digit on the canvas and get a live prediction from a CNN trained with PyTorch.
+          A pretrained model (99.27% test accuracy) is included, so a few commands are all you need.
+          The frontend is plain HTML/CSS/JS with no build step.
+        </p>
+        <ul class="tags">
+          <li>PyTorch</li><li>CNN</li><li>FastAPI</li><li>HTML / CSS / JS</li>
+        </ul>
+        <p class="links"><a href="https://github.com/ttsukahara967/mnist-digit-recognizer">View on GitHub →</a></p>
+      </div>
+      <div class="project-media">
+        <a href="images/mnist.png"><img src="images/mnist.png" alt="Screenshot of the MNIST Digit Recognizer" width="847" height="560" loading="lazy"></a>
+      </div>
+    </article>
+
+    <!-- 3. unity_test -->
+    <article class="project" id="unity_test">
+      <div class="project-body">
+        <h3>Memory Card Game <small>unity_test</small></h3>
+        <p class="desc">
+          A memory (concentration) card game built with Unity, played with fruit pictures. It has a 4×4 board,
+          card flip animation, and a move counter. When you clear a round, it sends your score to the companion API
+          server and shows the ranking. It also works on its own when the server is not running.
+        </p>
+        <ul class="tags">
+          <li>Unity</li><li>C#</li><li>uGUI</li><li>REST API client</li>
+        </ul>
+        <p class="links">
+          <a href="https://github.com/ttsukahara967/unity_test">View on GitHub →</a>
+        </p>
+      </div>
+      <div class="project-media">
+        <a href="images/unity-gameplay.png"><img src="images/unity-gameplay.png" alt="Gameplay screenshot: a 4×4 board of face-down cards with one cherry card flipped" width="691" height="344" loading="lazy"></a>
+      </div>
+    </article>
+
+    <!-- 4. unity_test_server -->
+    <article class="project" id="unity_test_server">
+      <div class="project-body">
+        <h3>Score API <small>unity_test_server</small></h3>
+        <p class="desc">
+          The API that receives scores from the memory game above. It offers JWT authentication, a ranking per number of pairs,
+          and interactive API docs with Scalar, and it runs with Docker Compose.
+        </p>
+        <ul class="tags">
+          <li>ASP.NET Core (.NET 10)</li><li>MySQL 8.4</li><li>JWT</li><li>Scalar / OpenAPI</li><li>Docker Compose</li>
+        </ul>
+        <p class="links"><a href="https://github.com/ttsukahara967/unity_test_server">View on GitHub →</a></p>
+      </div>
+      <div class="project-media">
+        <a href="images/unity-server-overview.png"><img src="images/unity-server-overview.png" alt="Scalar API docs overview: the endpoint list on the left and the Bearer token field" width="1280" height="620" loading="lazy"></a>
+        <a href="images/unity-server-submit.png"><img src="images/unity-server-submit.png" alt="Scalar &quot;Submit a score&quot; page showing the request body, a curl example, and the responses" width="992" height="660" loading="lazy"></a>
+      </div>
+    </article>
+
+    <!-- 5. mobile-order-demo -->
+    <article class="project" id="mobile-order-demo">
+      <div class="project-body">
+        <h3>Mobile Order Demo</h3>
+        <p class="desc">
+          A small mobile-ordering system: browse a menu, put dishes in a cart, and place an order.
+          It pairs a DDD-structured Laravel API with a Next.js mobile UI, all running in Docker.
+          The cart lives in Redis, orders are stored in MySQL, and the API is documented with Swagger UI.
+        </p>
+        <ul class="tags">
+          <li>Laravel 13 / PHP 8.4</li><li>DDD</li><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Tailwind CSS 4</li><li>MySQL</li><li>Redis</li><li>Swagger</li><li>PHPUnit</li>
+        </ul>
+        <p class="links"><a href="https://github.com/ttsukahara967/mobile-order-demo">View on GitHub →</a></p>
+      </div>
+      <div class="project-media phones">
+        <a href="images/order-menu.png"><img src="images/order-menu.png" alt="Menu screen" width="780" height="1688" loading="lazy"></a>
+        <a href="images/order-cart.png"><img src="images/order-cart.png" alt="Cart screen" width="780" height="1688" loading="lazy"></a>
+        <a href="images/order-complete.png"><img src="images/order-complete.png" alt="Order complete screen" width="780" height="1688" loading="lazy"></a>
+      </div>
+    </article>
+
+    <!-- 6. github-mcp-server -->
+    <article class="project" id="github-mcp-server">
+      <div class="project-body">
+        <h3>GitHub MCP Server</h3>
+        <p class="desc">
+          A minimal Model Context Protocol (MCP) server, written in Go, that exposes GitHub operations as tools.
+          Register it with Claude Code, ask in plain language, and it calls the <code>list_issues</code> tool
+          and summarizes the issues for you.
+        </p>
+        <ul class="tags">
+          <li>Go</li><li>MCP</li><li>GitHub API</li><li>Claude Code</li>
+        </ul>
+        <p class="links"><a href="https://github.com/ttsukahara967/github-mcp-server">View on GitHub →</a></p>
+      </div>
+      <div class="project-media">
+        <a href="images/mcp.png"><img src="images/mcp.png" alt="Interactive session calling the list_issues tool" width="1297" height="445" loading="lazy"></a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© ttsukahara967 · <a href="https://github.com/ttsukahara967">github.com/ttsukahara967</a></p>
+    </div>
+  </footer>
+</body>
+</html>
