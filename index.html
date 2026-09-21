@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ttsukahara967 | Projects</title>
-  <meta name="description" content="Personal projects by ttsukahara967: a RAG chatbot, an MNIST digit recognizer, a Tetris game with a CPU opponent, a Unity game with its score API, a mobile ordering demo, and an MCP server.">
+  <meta name="description" content="Personal projects by ttsukahara967: a RAG chatbot, an MNIST digit recognizer, a Flutter app and its Go API, a Tetris game with a CPU opponent, a Unity game with its score API, a mobile ordering demo, and an MCP server.">
   <meta property="og:title" content="ttsukahara967 | Projects">
   <meta property="og:description" content="A showcase of personal projects">
   <meta property="og:type" content="website">
@@ -27,7 +27,7 @@
   </header>
 
   <main id="projects" class="wrap">
-    <h2 class="section-title">Projects <span>7</span></h2>
+    <h2 class="section-title">Projects <span>9</span></h2>
 
     <!-- 1. chatbot_test -->
     <article class="project" id="chatbot_test">
@@ -67,7 +67,45 @@
       </div>
     </article>
 
-    <!-- 3. tetris_demo -->
+    <!-- 3. campsite_app -->
+    <article class="project" id="campsite_app">
+      <div class="project-body">
+        <h3>Campsite App</h3>
+        <p class="desc">
+          A Flutter demo app for API integration. Log in, browse the list of campsites, pull down to refresh,
+          and open a detail screen. It talks to the Campsite Go API below, and its tests use a mock API,
+          so they run without the backend.
+        </p>
+        <ul class="tags">
+          <li>Flutter</li><li>Dart</li><li>iOS Simulator</li><li>macOS</li><li>REST API client</li>
+        </ul>
+        <p class="links"><a href="https://github.com/ttsukahara967/campsite_app">View on GitHub →</a></p>
+      </div>
+      <div class="project-media portrait">
+        <a href="images/campsite-app.png"><img src="images/campsite-app.png" alt="List screen of the Campsite App" width="318" height="567" loading="lazy"></a>
+      </div>
+    </article>
+
+    <!-- 4. campsite_go -->
+    <article class="project" id="campsite_go">
+      <div class="project-body">
+        <h3>Campsite Go API</h3>
+        <p class="desc">
+          A sample RESTful API server for campsite information, built with Go and Gin. It uses MySQL in a Docker container,
+          reloads on every code change with Air, and serves a Swagger UI (OpenAPI spec) for trying the endpoints.
+          Its tests run against a real MySQL database.
+        </p>
+        <ul class="tags">
+          <li>Go</li><li>Gin</li><li>MySQL</li><li>Docker Compose</li><li>Air</li><li>Swagger / OpenAPI</li>
+        </ul>
+        <p class="links"><a href="https://github.com/ttsukahara967/campsite_go">View on GitHub →</a></p>
+      </div>
+      <div class="project-media">
+        <a href="images/campsite-go.png"><img src="images/campsite-go.png" alt="Swagger UI of the Campsite Go API" width="1435" height="289" loading="lazy"></a>
+      </div>
+    </article>
+
+    <!-- 5. tetris_demo -->
     <article class="project" id="tetris_demo">
       <div class="project-body">
         <h3>Tetris Demo</h3>
@@ -86,7 +124,7 @@
       </div>
     </article>
 
-    <!-- 4. unity_test -->
+    <!-- 6. unity_test -->
     <article class="project" id="unity_test">
       <div class="project-body">
         <h3>Memory Card Game <small>unity_test</small></h3>
@@ -107,7 +145,7 @@
       </div>
     </article>
 
-    <!-- 5. unity_test_server -->
+    <!-- 7. unity_test_server -->
     <article class="project" id="unity_test_server">
       <div class="project-body">
         <h3>Score API <small>unity_test_server</small></h3>
@@ -126,7 +164,7 @@
       </div>
     </article>
 
-    <!-- 6. mobile-order-demo -->
+    <!-- 8. mobile-order-demo -->
     <article class="project" id="mobile-order-demo">
       <div class="project-body">
         <h3>Mobile Order Demo</h3>
@@ -147,7 +185,7 @@
       </div>
     </article>
 
-    <!-- 7. github-mcp-server -->
+    <!-- 9. github-mcp-server -->
     <article class="project" id="github-mcp-server">
       <div class="project-body">
         <h3>GitHub MCP Server</h3>

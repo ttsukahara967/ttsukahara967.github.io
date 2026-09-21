@@ -178,6 +178,10 @@ a:focus-visible, .button:focus-visible {
 .project-media.phones {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.project-media.portrait img {
+  max-width: 260px;
+  margin: 0 auto;
+}
 
 .site-footer {
   margin-top: 48px;
