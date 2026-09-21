@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ttsukahara967 | Projects</title>
-  <meta name="description" content="Personal projects by ttsukahara967: a RAG chatbot, an MNIST digit recognizer, a Flutter app and its Go API, a Tetris game with a CPU opponent, a Unity game with its score API, a mobile ordering demo, and an MCP server.">
+  <meta name="description" content="Personal projects by ttsukahara967: a RAG chatbot, an MNIST digit recognizer, a Flutter app and its Go API, a motorcycle fuel log app, a Tetris game with a CPU opponent, a Unity game with its score API, a mobile ordering demo, and an MCP server.">
   <meta property="og:title" content="ttsukahara967 | Projects">
   <meta property="og:description" content="A showcase of personal projects">
   <meta property="og:type" content="website">
@@ -27,7 +27,7 @@
   </header>
 
   <main id="projects" class="wrap">
-    <h2 class="section-title">Projects <span>9</span></h2>
+    <h2 class="section-title">Projects <span>10</span></h2>
 
     <!-- 1. chatbot_test -->
     <article class="project" id="chatbot_test">
@@ -105,7 +105,26 @@
       </div>
     </article>
 
-    <!-- 5. tetris_demo -->
+    <!-- 5. fuel-log-app -->
+    <article class="project" id="fuel-log-app">
+      <div class="project-body">
+        <h3>Fuel Log App</h3>
+        <p class="desc">
+          An app for recording refuels and fuel economy for a motorcycle, built with an Expo (React Native) client and a NestJS API.
+          It uses JWT access and refresh tokens (refresh tokens are stored hashed in Redis), caches monthly stats in Redis,
+          and rate-limits requests with a Redis-backed throttler. GitHub Actions runs the tests and an end-to-end API smoke test.
+        </p>
+        <ul class="tags">
+          <li>React Native</li><li>Expo</li><li>NestJS</li><li>Prisma</li><li>PostgreSQL</li><li>Redis</li><li>JWT</li><li>Docker Compose</li><li>GitHub Actions</li>
+        </ul>
+        <p class="links"><a href="https://github.com/ttsukahara967/fuel-log-app">View on GitHub →</a></p>
+      </div>
+      <div class="project-media portrait">
+        <a href="images/fuel-log-list.png"><img src="images/fuel-log-list.png" alt="Fuel log list screen of the Fuel Log App" width="480" height="1043" loading="lazy"></a>
+      </div>
+    </article>
+
+    <!-- 6. tetris_demo -->
     <article class="project" id="tetris_demo">
       <div class="project-body">
         <h3>Tetris Demo</h3>
@@ -124,7 +143,7 @@
       </div>
     </article>
 
-    <!-- 6. unity_test -->
+    <!-- 7. unity_test -->
     <article class="project" id="unity_test">
       <div class="project-body">
         <h3>Memory Card Game <small>unity_test</small></h3>
@@ -145,7 +164,7 @@
       </div>
     </article>
 
-    <!-- 7. unity_test_server -->
+    <!-- 8. unity_test_server -->
     <article class="project" id="unity_test_server">
       <div class="project-body">
         <h3>Score API <small>unity_test_server</small></h3>
@@ -164,7 +183,7 @@
       </div>
     </article>
 
-    <!-- 8. mobile-order-demo -->
+    <!-- 9. mobile-order-demo -->
     <article class="project" id="mobile-order-demo">
       <div class="project-body">
         <h3>Mobile Order Demo</h3>
@@ -185,7 +204,7 @@
       </div>
     </article>
 
-    <!-- 9. github-mcp-server -->
+    <!-- 10. github-mcp-server -->
     <article class="project" id="github-mcp-server">
       <div class="project-body">
         <h3>GitHub MCP Server</h3>
