@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ttsukahara967 | Projects</title>
-  <meta name="description" content="PoC projects by ttsukahara967, built to learn AI-assisted development: a RAG chatbot, an MNIST digit recognizer, a Flutter app and its Go API, a motorcycle fuel log app, a Tetris game with a CPU opponent, a Unity game with its score API, a mobile ordering demo, and an MCP server.">
+  <meta name="description" content="PoC projects by ttsukahara967, built to learn AI-assisted development: a RAG chatbot, an MNIST digit recognizer, a Flutter app and its Go API, a motorcycle fuel log app, a Tetris game with a CPU opponent, a Unity game with its score API, a mobile ordering demo, an MCP server, a task manager, and a recipe manager.">
   <meta property="og:title" content="ttsukahara967 | Projects">
   <meta property="og:description" content="PoC projects built to learn AI-assisted development">
   <meta property="og:type" content="website">
@@ -28,7 +28,7 @@
   </header>
 
   <main id="projects" class="wrap">
-    <h2 class="section-title">Projects <span>10</span></h2>
+    <h2 class="section-title">Projects <span>12</span></h2>
 
     <!-- 1. chatbot_test -->
     <article class="project" id="chatbot_test">
@@ -221,6 +221,44 @@
       </div>
       <div class="project-media">
         <a href="images/mcp.png"><img src="images/mcp.png" alt="Interactive session calling the list_issues tool" width="1297" height="445" loading="lazy"></a>
+      </div>
+    </article>
+
+    <!-- 11. codex_test -->
+    <article class="project" id="codex_test">
+      <div class="project-body">
+        <h3>Taskflow <small>codex_test</small></h3>
+        <p class="desc">
+          A single-user task management app. The frontend is Next.js and the backend is Rust (Axum);
+          tasks are stored persistently in MySQL and login sessions live in Redis.
+          The whole stack starts with a single <code>docker compose up</code>.
+        </p>
+        <ul class="tags">
+          <li>Next.js</li><li>Rust</li><li>Axum</li><li>MySQL</li><li>Redis</li><li>Docker Compose</li>
+        </ul>
+        <p class="links"><a href="https://github.com/ttsukahara967/codex_test">View on GitHub →</a></p>
+      </div>
+      <div class="project-media">
+        <a href="images/taskflow.png"><img src="images/taskflow.png" alt="Screenshot of Taskflow" width="1280" height="713" loading="lazy"></a>
+      </div>
+    </article>
+
+    <!-- 12. recipe -->
+    <article class="project" id="recipe">
+      <div class="project-body">
+        <h3>Recipe Management System</h3>
+        <p class="desc">
+          A proof-of-concept built with Claude Code to experiment with and evaluate its capabilities.
+          It has a React (Vite) frontend and a FastAPI backend with MySQL, plus a recipe CRUD API with pagination and text search.
+          Tests run against a dedicated test database, so the real data is never touched.
+        </p>
+        <ul class="tags">
+          <li>React</li><li>Vite</li><li>FastAPI</li><li>SQLAlchemy</li><li>MySQL</li><li>pytest</li><li>Docker Compose</li><li>Claude Code</li>
+        </ul>
+        <p class="links"><a href="https://github.com/ttsukahara967/recipe">View on GitHub →</a></p>
+      </div>
+      <div class="project-media">
+        <a href="images/recipe.png"><img src="images/recipe.png" alt="Screenshot of the Recipe Management System" width="1280" height="900" loading="lazy"></a>
       </div>
     </article>
   </main>
