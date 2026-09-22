@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ttsukahara967 | Projects</title>
-  <meta name="description" content="PoC projects by ttsukahara967, built to learn AI-assisted development: a RAG chatbot, an MNIST digit recognizer, a Flutter app and its Go API, a motorcycle fuel log app, a Tetris game with a CPU opponent, a Unity game with its score API, a mobile ordering demo, an MCP server, a task manager, and a recipe manager.">
+  <meta name="description" content="PoC projects by ttsukahara967, built to learn AI-assisted development: a RAG chatbot, an MNIST digit recognizer, a Flutter app and its Go API, a motorcycle fuel log app, a Tetris game with a CPU opponent, an on-rails shooter tech demo with a C++ wave service, a Unity game with its score API, a mobile ordering demo, an MCP server, a task manager, and a recipe manager.">
   <meta property="og:title" content="ttsukahara967 | Projects">
   <meta property="og:description" content="PoC projects built to learn AI-assisted development">
   <meta property="og:type" content="website">
@@ -29,7 +29,7 @@
   </header>
 
   <main id="projects" class="wrap">
-    <h2 class="section-title">Projects <span>12</span></h2>
+    <h2 class="section-title">Projects <span>13</span></h2>
 
     <!-- 1. chatbot_test -->
     <article class="project" id="chatbot_test">
@@ -145,7 +145,27 @@
       </div>
     </article>
 
-    <!-- 7. unity_test -->
+    <!-- 7. horizon-rider -->
+    <article class="project" id="horizon-rider">
+      <div class="project-body">
+        <h3>Horizon Rider</h3>
+        <p class="desc">
+          A small on-rails shooter built as a tech demo exploring how far an AI coding agent can be trusted to build a game,
+          end to end. Enemy waves are not scripted in the client — a separate C++ service looks at the player's score,
+          survival time, and hits taken, and returns the next wave's enemy count, formation, speed, and spawn pacing.
+          The Unity client falls back to a safe default wave if that service is slow or unreachable.
+        </p>
+        <ul class="tags">
+          <li>Unity</li><li>C#</li><li>C++</li><li>CMake</li><li>doctest</li><li>GitHub Actions</li>
+        </ul>
+        <p class="links"><a href="https://github.com/ttsukahara967/horizon-rider">View on GitHub →</a></p>
+      </div>
+      <div class="project-media">
+        <a href="images/horizon-rider.png"><img src="images/horizon-rider.png" alt="Horizon Rider running in the Unity Editor's Play mode: a blue capsule player on a scrolling checkerboard ground, with red cube enemies approaching in formation from the horizon, and a SCORE/TIME/HITS readout in the top-left corner." width="759" height="430" loading="lazy"></a>
+      </div>
+    </article>
+
+    <!-- 8. unity_test -->
     <article class="project" id="unity_test">
       <div class="project-body">
         <h3>Memory Card Game <small>unity_test</small></h3>
@@ -166,7 +186,7 @@
       </div>
     </article>
 
-    <!-- 8. unity_test_server -->
+    <!-- 9. unity_test_server -->
     <article class="project" id="unity_test_server">
       <div class="project-body">
         <h3>Score API <small>unity_test_server</small></h3>
@@ -185,7 +205,7 @@
       </div>
     </article>
 
-    <!-- 9. mobile-order-demo -->
+    <!-- 10. mobile-order-demo -->
     <article class="project" id="mobile-order-demo">
       <div class="project-body">
         <h3>Mobile Order Demo</h3>
@@ -206,7 +226,7 @@
       </div>
     </article>
 
-    <!-- 10. github-mcp-server -->
+    <!-- 11. github-mcp-server -->
     <article class="project" id="github-mcp-server">
       <div class="project-body">
         <h3>GitHub MCP Server</h3>
@@ -225,7 +245,7 @@
       </div>
     </article>
 
-    <!-- 11. codex_test -->
+    <!-- 12. codex_test -->
     <article class="project" id="codex_test">
       <div class="project-body">
         <h3>Taskflow <small>codex_test</small></h3>
@@ -244,7 +264,7 @@
       </div>
     </article>
 
-    <!-- 12. recipe -->
+    <!-- 13. recipe -->
     <article class="project" id="recipe">
       <div class="project-body">
         <h3>Recipe Management System</h3>
