@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ttsukahara967 | Projects</title>
-  <meta name="description" content="PoC projects by ttsukahara967, built to learn AI-assisted development: a RAG chatbot, an MNIST digit recognizer, an AWS Terraform/SST infrastructure sample, a Flutter app and its Go API, a motorcycle fuel log app, a Tetris game with a CPU opponent, an on-rails shooter tech demo with a C++ wave service, a Unity game with its score API, a mobile ordering demo, an MCP server, a task manager, and a recipe manager.">
+  <meta name="description" content="PoC projects by ttsukahara967, built to learn AI-assisted development: a RAG chatbot, an MNIST digit recognizer, an AWS Terraform/SST infrastructure sample, a Flutter app and its Go API, a motorcycle fuel log app, a Tetris game with a CPU opponent, an on-rails shooter tech demo with a C++ wave service, a solo Japanese mahjong demo with a Rust CPU AI, a Unity game with its score API, a mobile ordering demo, an MCP server, a task manager, and a recipe manager.">
   <meta property="og:title" content="ttsukahara967 | Projects">
   <meta property="og:description" content="PoC projects built to learn AI-assisted development">
   <meta property="og:type" content="website">
@@ -29,7 +29,7 @@
   </header>
 
   <main id="projects" class="wrap">
-    <h2 class="section-title">Projects <span>14</span></h2>
+    <h2 class="section-title">Projects <span>15</span></h2>
 
     <!-- 1. chatbot_test -->
     <article class="project" id="chatbot_test">
@@ -184,7 +184,27 @@
       </div>
     </article>
 
-    <!-- 9. unity_test -->
+    <!-- 9. mahjong_demo -->
+    <article class="project" id="mahjong_demo">
+      <div class="project-body">
+        <h3>Mahjong Demo</h3>
+        <p class="desc">
+          One-player Japanese mahjong against three CPU opponents. It follows the same split as Tetris Demo:
+          a Unity client, with the CPUs' discard decisions computed by a separate Rust server
+          (rules engine, shanten, yaku, scoring, and a heuristic discard AI, with 55 unit tests).
+          Nakama handles auth and the results leaderboard, just like in Tetris Demo.
+        </p>
+        <ul class="tags">
+          <li>Unity</li><li>C#</li><li>Rust</li><li>Nakama</li><li>PostgreSQL</li><li>Docker</li>
+        </ul>
+        <p class="links"><a href="https://github.com/ttsukahara967/mahjong_demo">View on GitHub →</a></p>
+      </div>
+      <div class="project-media">
+        <a href="images/mahjong-playing.png"><img src="images/mahjong-playing.png" alt="Playing screen of the Mahjong Demo" width="831" height="478" loading="lazy"></a>
+      </div>
+    </article>
+
+    <!-- 10. unity_test -->
     <article class="project" id="unity_test">
       <div class="project-body">
         <h3>Memory Card Game <small>unity_test</small></h3>
@@ -205,7 +225,7 @@
       </div>
     </article>
 
-    <!-- 10. unity_test_server -->
+    <!-- 11. unity_test_server -->
     <article class="project" id="unity_test_server">
       <div class="project-body">
         <h3>Score API <small>unity_test_server</small></h3>
@@ -224,7 +244,7 @@
       </div>
     </article>
 
-    <!-- 11. mobile-order-demo -->
+    <!-- 12. mobile-order-demo -->
     <article class="project" id="mobile-order-demo">
       <div class="project-body">
         <h3>Mobile Order Demo</h3>
@@ -245,7 +265,7 @@
       </div>
     </article>
 
-    <!-- 12. github-mcp-server -->
+    <!-- 13. github-mcp-server -->
     <article class="project" id="github-mcp-server">
       <div class="project-body">
         <h3>GitHub MCP Server</h3>
@@ -264,7 +284,7 @@
       </div>
     </article>
 
-    <!-- 13. codex_test -->
+    <!-- 14. codex_test -->
     <article class="project" id="codex_test">
       <div class="project-body">
         <h3>Taskflow <small>codex_test</small></h3>
@@ -283,7 +303,7 @@
       </div>
     </article>
 
-    <!-- 14. recipe -->
+    <!-- 15. recipe -->
     <article class="project" id="recipe">
       <div class="project-body">
         <h3>Recipe Management System</h3>
