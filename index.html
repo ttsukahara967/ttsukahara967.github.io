@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ttsukahara967 | Projects</title>
-  <meta name="description" content="PoC projects by ttsukahara967, built to learn AI-assisted development: a RAG chatbot, an MNIST digit recognizer, an AWS Terraform/SST infrastructure sample, a Flutter app and its Go API, a motorcycle fuel log app, a Tetris game with a CPU opponent, an on-rails shooter tech demo with a C++ wave service, a solo Japanese mahjong demo with a Rust CPU AI, a free-play pachislot demo with a C++ ranking server, a Unity game with its score API, a mobile ordering demo, an MCP server, a task manager, and a recipe manager.">
+  <meta name="description" content="PoC projects by ttsukahara967, built to learn AI-assisted development: a RAG chatbot, an MNIST digit recognizer, a recipe MCP server, an AWS Terraform/SST infrastructure sample, a Flutter app and its Go API, a motorcycle fuel log app, a Tetris game with a CPU opponent, an on-rails shooter tech demo with a C++ wave service, a solo Japanese mahjong demo with a Rust CPU AI, a free-play pachislot demo with a C++ ranking server, a Unity game with its score API, a mobile ordering demo, an MCP server, a task manager, and a recipe manager.">
   <meta property="og:title" content="ttsukahara967 | Projects">
   <meta property="og:description" content="PoC projects built to learn AI-assisted development">
   <meta property="og:type" content="website">
@@ -30,7 +30,7 @@
   </header>
 
   <main id="projects" class="wrap">
-    <h2 class="section-title">Projects <span>16</span></h2>
+    <h2 class="section-title">Projects <span>17</span></h2>
 
     <!-- 1. chatbot_test -->
     <article class="project" id="chatbot_test">
@@ -70,7 +70,27 @@
       </div>
     </article>
 
-    <!-- 3. recipe-iac -->
+    <!-- 3. recipe-mcp -->
+    <article class="project" id="recipe-mcp">
+      <div class="project-body">
+        <h3>Recipe MCP Server</h3>
+        <p class="desc">
+          A sample MCP server, built with FastMCP, that serves the recipes from Recipe IaC Sample below
+          so an LLM client (Claude Code, Claude Desktop, ...) can search them, read them, and rescale
+          ingredient amounts. Registered as an MCP server in Claude Code, it picks the right tool itself
+          from a plain-language request like "suggest a Chinese dish I can make in 30 minutes."
+        </p>
+        <ul class="tags">
+          <li>Python</li><li>FastMCP</li><li>MCP</li><li>Pydantic</li><li>Claude Code</li>
+        </ul>
+        <p class="links"><a href="https://github.com/ttsukahara967/recipe-mcp">View on GitHub →</a></p>
+      </div>
+      <div class="project-media">
+        <a href="images/recipe-mcp.png"><img src="images/recipe-mcp.png" alt="MCP Inspector calling the scale_ingredients tool" width="2560" height="1600" loading="lazy"></a>
+      </div>
+    </article>
+
+    <!-- 4. recipe-iac -->
     <article class="project" id="recipe-iac">
       <div class="project-body">
         <h3>Recipe IaC Sample</h3>
@@ -89,7 +109,7 @@
       </div>
     </article>
 
-    <!-- 4. campsite_app -->
+    <!-- 5. campsite_app -->
     <article class="project" id="campsite_app">
       <div class="project-body">
         <h3>Campsite App</h3>
@@ -108,7 +128,7 @@
       </div>
     </article>
 
-    <!-- 5. campsite_go -->
+    <!-- 6. campsite_go -->
     <article class="project" id="campsite_go">
       <div class="project-body">
         <h3>Campsite Go API</h3>
@@ -127,7 +147,7 @@
       </div>
     </article>
 
-    <!-- 6. fuel-log-app -->
+    <!-- 7. fuel-log-app -->
     <article class="project" id="fuel-log-app">
       <div class="project-body">
         <h3>Fuel Log App</h3>
@@ -146,7 +166,7 @@
       </div>
     </article>
 
-    <!-- 7. tetris_demo -->
+    <!-- 8. tetris_demo -->
     <article class="project" id="tetris_demo">
       <div class="project-body">
         <h3>Tetris Demo</h3>
@@ -165,7 +185,7 @@
       </div>
     </article>
 
-    <!-- 8. horizon-rider -->
+    <!-- 9. horizon-rider -->
     <article class="project" id="horizon-rider">
       <div class="project-body">
         <h3>Horizon Rider</h3>
@@ -185,7 +205,7 @@
       </div>
     </article>
 
-    <!-- 9. mahjong_demo -->
+    <!-- 10. mahjong_demo -->
     <article class="project" id="mahjong_demo">
       <div class="project-body">
         <h3>Mahjong Demo</h3>
@@ -205,7 +225,7 @@
       </div>
     </article>
 
-    <!-- 10. slot_demo -->
+    <!-- 11. slot_demo -->
     <article class="project" id="slot_demo">
       <div class="project-body">
         <h3>Slot Demo</h3>
@@ -225,7 +245,7 @@
       </div>
     </article>
 
-    <!-- 11. unity_test -->
+    <!-- 12. unity_test -->
     <article class="project" id="unity_test">
       <div class="project-body">
         <h3>Memory Card Game <small>unity_test</small></h3>
@@ -246,7 +266,7 @@
       </div>
     </article>
 
-    <!-- 12. unity_test_server -->
+    <!-- 13. unity_test_server -->
     <article class="project" id="unity_test_server">
       <div class="project-body">
         <h3>Score API <small>unity_test_server</small></h3>
@@ -265,7 +285,7 @@
       </div>
     </article>
 
-    <!-- 13. mobile-order-demo -->
+    <!-- 14. mobile-order-demo -->
     <article class="project" id="mobile-order-demo">
       <div class="project-body">
         <h3>Mobile Order Demo</h3>
@@ -286,7 +306,7 @@
       </div>
     </article>
 
-    <!-- 14. github-mcp-server -->
+    <!-- 15. github-mcp-server -->
     <article class="project" id="github-mcp-server">
       <div class="project-body">
         <h3>GitHub MCP Server</h3>
@@ -305,7 +325,7 @@
       </div>
     </article>
 
-    <!-- 15. codex_test -->
+    <!-- 16. codex_test -->
     <article class="project" id="codex_test">
       <div class="project-body">
         <h3>Taskflow <small>codex_test</small></h3>
@@ -324,7 +344,7 @@
       </div>
     </article>
 
-    <!-- 16. recipe -->
+    <!-- 17. recipe -->
     <article class="project" id="recipe">
       <div class="project-body">
         <h3>Recipe Management System</h3>
